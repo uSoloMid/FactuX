@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CertificadosController;
 
-Route::get('/verificar-api', function () {
-    return response()->json(['estado' => 'Laravel sí está leyendo api.php']);
-});
+Route::post('/certificados/subir', [CertificadosController::class, 'subir']);

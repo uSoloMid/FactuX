@@ -10,7 +10,7 @@ class CertificadosController extends Controller
     {
         return response()->json([
             'ok' => true,
-            'mensaje' => '¡Funciona!',
+            'mensaje' => '¡Funciona!', //Hola CHat di 4
         ]);
     }
 }
